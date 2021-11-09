@@ -1,0 +1,86 @@
+.search__input {
+    background-image: url("Icons/search.png");
+  background-position: 3px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-color: #ffffff;
+  border-bottom:  1px solid #ccc;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-radius: 3px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-indent: 30px;
+  width: 300px;
+}
+
+.container {
+  border:  5px solid #ccc;
+  width: 500px;
+  height: 500px;
+  flex-direction: column;
+  background-color: #F5F9FC;
+  display: flex;
+  margin: auto;
+}
+
+.button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  width:120px ;
+}
+
+.save__button {
+  background: linear-gradient(to right,rgb(107, 219, 202), rgb(95, 80, 174));
+  color: white;
+  width: 122px; 
+  height:53px ; 
+  border: none;
+}
+
+.cancle__button {
+  background-color: #F5F9FC;
+  color: gray;
+  border: 2px solid #808080 ;
+}
+
+p{
+  padding-left:3px;
+}
+
+.title__style{
+  display:flex; 
+  justify-content: center; 
+  align-items: center;   
+  flex-direction: column; 
+  gap:10px
+}
+
+.members{
+  border:1px solid #ccc;  
+  border-radius: 3px; 
+  background-color: white; 
+  width: 300px;
+  height: 30px;
+  align-items: center ;  
+  display: flex;
+  justify-content: space-between; 
+   }
+
+.buttons__style{
+  display: inline-block;
+}
+
+.member{
+  display: flex;
+  align-items: center;
+}
+
+.member__padding{
+  padding-right: 3px;
+}
