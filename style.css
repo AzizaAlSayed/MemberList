@@ -1,10 +1,10 @@
 .search__input {
-    background-image: url("Icons/search.png");
+  background-image: url("Icons/search.png");
   background-position: 3px center;
   background-repeat: no-repeat;
   background-size: 15px 15px;
   background-color: #ffffff;
-  border-bottom:  1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   border-right: 0px;
   border-left: 0px;
   border-top: 0px;
@@ -15,14 +15,27 @@
   width: 300px;
 }
 
+.add__input {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-indent: 5px;
+  height: 20px;
+  width: 258px;
+  margin-right: 10px;
+}
+
 .container {
-  border:  5px solid #ccc;
+  border: 5px solid #ccc;
   width: 500px;
-  height: 500px;
+  height: auto;
   flex-direction: column;
-  background-color: #F5F9FC;
+  background-color: #f5f9fc;
   display: flex;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .button {
@@ -32,55 +45,55 @@
   display: inline-block;
   font-size: 16px;
   border-radius: 2px;
-  width:120px ;
+  width: 120px;
 }
 
 .save__button {
-  background: linear-gradient(to right,rgb(107, 219, 202), rgb(95, 80, 174));
+  background: linear-gradient(to right, rgb(107, 219, 202), rgb(95, 80, 174));
   color: white;
-  width: 122px; 
-  height:53px ; 
+  width: 122px;
+  height: 53px;
   border: none;
 }
 
 .cancle__button {
-  background-color: #F5F9FC;
+  background-color: #f5f9fc;
   color: gray;
-  border: 2px solid #808080 ;
+  border: 2px solid #808080;
 }
 
-p{
-  padding-left:3px;
+p {
+  padding-left: 3px;
 }
 
-.title__style{
-  display:flex; 
-  justify-content: center; 
-  align-items: center;   
-  flex-direction: column; 
-  gap:10px
+.title__style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.members{
-  border:1px solid #ccc;  
-  border-radius: 3px; 
-  background-color: white; 
+.members {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
   width: 300px;
   height: 30px;
-  align-items: center ;  
+  align-items: center;
   display: flex;
-  justify-content: space-between; 
-   }
+  justify-content: space-between;
+}
 
-.buttons__style{
+.buttons__style {
   display: inline-block;
 }
 
-.member{
+.member {
   display: flex;
   align-items: center;
 }
 
-.member__padding{
+.member__padding {
   padding-right: 3px;
 }
