@@ -22,3 +22,7 @@ function iseMpty(input) {
 }
 
 //add.addEventListener("click", showContent);
+
+function removeDummy(e) {
+    e.parentNode.parentNode.removeChild(e.parentNode); 
+}
