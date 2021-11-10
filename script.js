@@ -1,3 +1,6 @@
+let member = document.getElementById("add");
+member.addEventListener("click", showContent);
+
 function showContent() {
     let name = document.getElementById("add").value;
     if ((iseMpty(name))) {
@@ -18,9 +21,7 @@ function iseMpty(input) {
     return true;
 }
 
-//add.addEventListener("click", showContent);
-
-function removeDummy(e) {
+function removeMember(e) {
     e.parentNode.parentNode.removeChild(e.parentNode);
 }
 
