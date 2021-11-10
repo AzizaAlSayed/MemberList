@@ -1,21 +1,24 @@
-function addNewMember() {
+function showContent() {
     let name = document.getElementById("add").value;
-    isEmpty(name)
-    let firstDiv = document.createElement("div");
-    firstDiv.setAttribute('class', 'members');
-    let secondDiv = document.createElement("div");
-    secondDiv.setAttribute('class', 'member');
-    let addPhar = document.createElement("p");
-    let addName = document.createTextNode(name);
-    firstDiv.appendChild(secondDiv);
-    secondDiv.appendChild(addPhar);
-    secondDiv.appendChild(addName);
+    /* if (iseMpty(name)) {
+         return;
+     } else {*/
+    let temp = document.getElementsByTagName("template")[0];
+    let clon = temp.content.cloneNode(true);
     let users = document.getElementById("users");
-    users.insertBefore(firstDiv, users.childNodes[2])
+    users.appendChild(clon);
+    document.getElementById("member_name").innerHTML = name;
+    //  document.getElementById("add").innerHTML = " ";
+    // name.reset();
+    // }
 }
 
-function isEmpty(input) {
-    if (input === null)
-        alert("please fill the input")
+function iseMpty(input) {
+    if (input == "" || input == null) {
+        alert("input must be filled out");
+        return false;
+    }
 
 }
+
+//add.addEventListener("click", showContent);
