@@ -1,15 +1,13 @@
 function showContent() {
     let name = document.getElementById("add").value;
-    /* if (iseMpty(name)) {
-         return;
-     } else {*/
-    let temp = document.getElementsByTagName("template")[0];
-    let clon = temp.content.cloneNode(true);
-    let users = document.getElementById("users");
-    users.appendChild(clon);
-    document.getElementById("member_name").innerHTML = name;
-    document.getElementById("add").value = " ";
-    // }
+    if ((iseMpty(name))) {
+        let temp = document.getElementsByTagName("template")[0];
+        let clon = temp.content.cloneNode(true);
+        let users = document.getElementById("users");
+        users.appendChild(clon);
+        document.getElementById("member_name").innerHTML = name;
+        name = " ";
+    }
 }
 
 function iseMpty(input) {
@@ -17,7 +15,7 @@ function iseMpty(input) {
         alert("input must be filled out");
         return false;
     }
-
+    return true;
 }
 
 //add.addEventListener("click", showContent);
