@@ -25,6 +25,10 @@ function removeMember(e) {
     e.parentNode.parentNode.removeChild(e.parentNode);
 }
 
+function toggleIcon(e) {
+    e.classList.toggle('check__icon--member');
+}
+
 /*function myFunction() {
     let input = document.getElementById("search");
     let filter = input.value.toUpperCase();

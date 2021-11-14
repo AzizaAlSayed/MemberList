@@ -83,13 +83,15 @@ p {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  gap: 50px;
+  margin: auto;
 }
 
 .buttons__style {
   display: inline-block;
 }
 
-.button__delete--member{
+.button__delete--member {
   background-color: #f44336;
   color: white;
   border: none;
@@ -97,6 +99,15 @@ p {
   height: 30px;
   justify-content: center;
   margin-left: 10px;
+}
+
+.button__check--member {
+  background-color: white;
+  border: none;
+  width: 28px;
+  height: 20px;
+  justify-content: center;
+  align-content: center;
 }
 
 .button__add--member {
@@ -116,4 +127,18 @@ p {
 
 .member__padding {
   padding-right: 3px;
+}
+
+.cyrcle__icon--member {
+  background-image: url("Icons/cyrcle.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 21px 21px;
+}
+
+.check__icon--member {
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-image: url("Icons/check.svg");
 }
