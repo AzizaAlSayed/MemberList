@@ -101,6 +101,16 @@ p {
   margin-left: 10px;
 }
 
+.button__search--member {
+  color: #ccc;
+  border: 2px solid #ccc;
+  background-color: #f5f9fc;
+  width: 55px;
+  height: 25px;
+  justify-content: center;
+  margin-left: 10px;
+}
+
 .button__check--member {
   background-color: white;
   border: none;
