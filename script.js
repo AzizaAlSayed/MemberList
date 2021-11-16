@@ -5,10 +5,9 @@ function addMember() {
     } else {
         let temp = document.getElementsByTagName("template")[0];
         let clon = temp.content.cloneNode(true);
-        let users = document.getElementById("users");
-
+        let members = document.getElementById("members__list");
         clon.getElementById("member__name").innerHTML = name;
-        users.appendChild(clon);
+        members.appendChild(clon);
         document.getElementById("add").value = "";
     }
 }
