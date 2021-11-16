@@ -27,17 +27,6 @@
   margin-right: 10px;
 }
 
-.container {
-  border: 5px solid #ccc;
-  width: 550px;
-  height: auto;
-  flex-direction: column;
-  background-color: #f5f9fc;
-  display: flex;
-  margin: auto;
-  padding-bottom: 50px;
-}
-
 .button {
   padding: 15px 32px;
   text-align: center;
@@ -60,31 +49,6 @@
   background-color: #f5f9fc;
   color: gray;
   border: 2px solid #808080;
-}
-
-p {
-  padding-left: 3px;
-}
-
-.title__style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.members {
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  background-color: white;
-  width: 300px;
-  height: 30px;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  margin: auto;
 }
 
 .buttons__style {
@@ -120,6 +84,42 @@ p {
   margin-left: 10px;
 }
 
+.container {
+  border: 5px solid #ccc;
+  width: 550px;
+  height: auto;
+  flex-direction: column;
+  background-color: #f5f9fc;
+  display: flex;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+p {
+  padding-left: 3px;
+}
+
+.title__style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.members {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+  width: 300px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin: auto;
+}
+
 .member {
   display: flex;
   align-items: center;
@@ -141,4 +141,13 @@ p {
   background-repeat: no-repeat;
   background-size: 13px 13px;
   background-image: url("Icons/check.svg");
+}
+
+.flex__display {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.left__padding {
+  padding-left: 5px;
 }
