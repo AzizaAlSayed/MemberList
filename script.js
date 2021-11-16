@@ -6,7 +6,7 @@ function showContent() {
         let users = document.getElementById("users");
         users.appendChild(clon);//.nextSibling(users.childNodes[2]);
         document.getElementById("member_name").innerHTML = name;
-        document.getElementById("add").value = " ";
+        document.getElementById("add").value = "";
     }
 }
 
