@@ -1,11 +1,13 @@
-function showContent() {
+function addMember() {
     let name = document.getElementById("add").value;
-    if ((iseMpty(name))) {
+    if (!(iseMpty(name))) {
+        return;
+    } else {
         let temp = document.getElementsByTagName("template")[0];
         let clon = temp.content.cloneNode(true);
         let users = document.getElementById("users");
-        users.appendChild(clon);//.nextSibling(users.childNodes[2]);
-        document.getElementById("member_name").innerHTML = name;
+        clon.getElementById("member_name").innerHTML = name;
+        users.appendChild(clon);
         document.getElementById("add").value = "";
     }
 }
@@ -27,9 +29,9 @@ function toggleIcon(iconClick) {
 }
 
 function search() {
-    var input = document.getElementById("search");
-    var filter = input.value.toLowerCase();
-    var nodes = document.getElementsByClassName('member');
+    let input = document.getElementById("search");
+    let filter = input.value.toLowerCase();
+    let nodes = document.getElementsByClassName('member');
     for (i = 0; i < nodes.length; i++) {
         if (nodes[i].innerText.toLowerCase().includes(filter)) {
             return alert(input.value + "is here");
