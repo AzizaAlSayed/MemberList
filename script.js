@@ -6,7 +6,8 @@ function addMember() {
         let temp = document.getElementsByTagName("template")[0];
         let clon = temp.content.cloneNode(true);
         let users = document.getElementById("users");
-        clon.getElementById("member_name").innerHTML = name;
+
+        clon.getElementById("member__name").innerHTML = name;
         users.appendChild(clon);
         document.getElementById("add").value = "";
     }
@@ -29,14 +30,21 @@ function toggleIcon(iconClick) {
 }
 
 function search() {
-    let input = document.getElementById("search");
-    let filter = input.value.toLowerCase();
-    let nodes = document.getElementsByClassName('member');
-    for (i = 0; i < nodes.length; i++) {
-        if (nodes[i].innerText.toLowerCase().includes(filter)) {
-            return alert(input.value + "is here");
+    let input = document.getElementById("search").value;
+    if (!(iseMpty(input))) {
+        return;
+    }
+    else {
+        let filter = input.toLowerCase();
+        let members = document.getElementById("members__list");
+        let nodes = members.getElementsByClassName("member");
+        for (i = 0; i < nodes.length; i++) {
+            if (nodes[i].innerText.toLowerCase().includes(filter)) {
+                nodes[i].parentNode.parentNode.style.display = "flex";
+            } else {
+                nodes[i].parentNode.parentNode.style.display = "none";
+            }
         }
     }
-    return alert(input.value + "not found")
 }
 
