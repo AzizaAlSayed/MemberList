@@ -19,7 +19,7 @@ function iseMpty(input) {
 }
 
 function removeMember(deleteMemner) {
-    deleteMemner.parentNode.parentNode.removeChild(e.parentNode);
+    deleteMemner.parentNode.parentNode.removeChild(deleteMemner.parentNode);
 }
 
 function toggleIcon(iconClick) {
