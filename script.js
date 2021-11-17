@@ -1,23 +1,19 @@
 function addMember() {
     let name = document.getElementById("add").value;
-    if (!(iseMpty(name))) {
+    if (iseMpty(name)) {
+        alert("input must be filled out");
         return;
-    } else {
-        let temp = document.getElementsByTagName("template")[0];
-        let clon = temp.content.cloneNode(true);
-        let members = document.getElementById("members__list");
-        clon.getElementById("member__name").innerHTML = name;
-        members.appendChild(clon);
-        document.getElementById("add").value = "";
     }
+    let memberTemplate = document.getElementsByTagName("template")[0];
+    let newMember = memberTemplate.content.cloneNode(true);
+    let members = document.getElementById("members__list");
+    newMember.getElementById("member__name").innerHTML = name;
+    members.appendChild(newMember);
+    document.getElementById("add").value = "";
 }
 
 function iseMpty(input) {
-    if (input == "" || input == null) {
-        alert("input must be filled out");
-        return false;
-    }
-    return true;
+    return input === "" || input === null
 }
 
 function removeMember(deleteMemner) {
@@ -30,20 +26,18 @@ function toggleIcon(iconClick) {
 
 function search() {
     let input = document.getElementById("search").value;
-    if (!(iseMpty(input))) {
+    if (iseMpty(input)) {
+        alert("input must be filled out");
         return;
     }
-    else {
-        let filter = input.toLowerCase();
-        let members = document.getElementById("members__list");
-        let nodes = members.getElementsByClassName("member");
-        for (i = 0; i < nodes.length; i++) {
-            if (nodes[i].innerText.toLowerCase().includes(filter)) {
-                nodes[i].parentNode.parentNode.style.display = "flex";
-            } else {
-                nodes[i].parentNode.parentNode.style.display = "none";
-            }
+    let filter = input.toLowerCase();
+    let members = document.getElementById("members__list");
+    let membersNodes = members.getElementsByClassName("member");
+    for (i = 0; i < membersNodes.length; i++) {
+        if (membersNodes[i].innerText.toLowerCase().includes(filter)) {
+            membersNodes[i].parentNode.parentNode.style.display = "flex";
+        } else {
+            membersNodes[i].parentNode.parentNode.style.display = "none";
         }
     }
 }
-
